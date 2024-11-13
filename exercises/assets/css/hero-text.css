@@ -1,0 +1,64 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+*, *::before, *::after { box-sizing: border-box }
+html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
+scroll-behavior: smooth; scroll-padding-top: 20px }
+body { line-height: 1.5; min-height: 100vh; 
+margin-left: auto; margin-right: auto; min-height: 100vh }  
+@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
+@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
+nav, header, section, footer { width: 100% }
+nav *:last-child, header *:last-child, section *:last-child, footer *:last-child { margin-bottom: 0 }
+img { width: 100%; height: auto; display: block }
+input, button, textarea, select { font: inherit }
+h1, h2, h3, h4, p, li { word-break: break-word; hyphens: auto }
+
+/* ============= CSS FOR HERO BLOCK ============= */
+
+header {
+    /* Flexbox to centre child div vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Spacing around child div inside hero block */
+    padding: 0 20% 4% 20%;
+    /* Optionally, centre child div horizontally */
+    text-align: center;
+    /* Background colour */
+    background-color: rgb(31, 131, 76);
+}
+
+/* Set minimum height of hero block */
+@media (min-width: 768px) { 
+    header { min-height: 80vh } 
+}
+@media (max-width: 767px) { 
+    header { min-height: 500px } 
+}
+
+.hero-text-container h1, 
+.hero-text-container h2 {
+    line-height: 1.2;
+    color:#fff;
+}
+
+.hero-text-container h1 {
+    /* Space under h1 and above h2 */
+    margin-bottom: 24px;
+    /* Set main heading to extra large size */
+    font-size: 36px;
+    /* When text extra large, decrease spacing between characters  */
+    letter-spacing: -4px;
+}
+
+.hero-text-container h2 {
+    /* Optionally, remove default weight of 'bold' from h2 */
+    font-weight: normal;
+    font-size: 28px;
+    /* Optionally, change text in h2 to all capital letters */
+    text-transform: uppercase;
+}
+
+/* ======== END CSS FOR HERO BLOCK ======== */
+
+

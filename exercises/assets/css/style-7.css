@@ -1,0 +1,90 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+*, *::before, *::after { box-sizing: border-box }
+html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
+scroll-behavior: smooth; scroll-padding-top: 20px }
+body { line-height: 1.5; min-height: 100vh }
+img { width: 100%; height: auto; display: block }
+input, button, textarea, select { font: inherit }
+@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
+@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
+
+/* ============ CUSTOM PROPERTIES ============  */
+
+
+/* ================= ENDS ================ */
+
+
+/* HEADER */
+header { 
+    display: flex; flex-direction: column; justify-content: space-around;
+    align-items: center; padding: 20px 0;
+    margin-left:auto; margin-right:auto; width: 100%;
+    background-color: pink;
+}
+
+@media (min-width: 1025px) { header { padding: 3% 22% 5% 22% } }
+@media (min-width: 768px) and (max-width: 1024px) { header { padding: 5% 20% } }
+@media (max-width: 767px) { header { padding: 32px 9% 32px 9% } }
+
+header *:last-child { margin-bottom: 0 !important }
+
+
+
+/* Main heading */
+h1 {
+	font-family: serif;
+	font-weight: bold;
+	font-size: 72px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 32px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+/* Small headings */
+h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #5b569a;    
+    color: var(--trend-050);
+    font-size: 32px;
+    text-align:center;
+    margin-bottom: 42px;
+    line-height: 1.2;
+}
+
+
+
+/* SECTIONS */
+section { background-color:aliceblue }
+
+/* Padding around content */
+@media (min-width: 1025px) { section { padding: 4% 24% } }
+@media (min-width: 768px) and (max-width: 1024px) { section { padding: 5% 20% } }
+@media (max-width: 767px) { section { padding: 32px 9% 32px 9% } }
+
+section *:last-child { margin-bottom: 0 !important }
+
+
+/* Smaller headings */
+h3 {
+	font-family: serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: var(--purple-800);
+    margin-top: 32px;
+    margin-bottom: 2px;
+}
+
+/* Text paragraphs */
+p {
+   font-family: sans-serif;
+   font-weight: normal;
+   font-size: 22px;
+   line-height: 1.6;
+   margin-top: 0;
+   margin-bottom: 20px;
+}
+

@@ -1,0 +1,73 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+*, *::before, *::after { box-sizing: border-box }
+html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
+scroll-behavior: smooth; scroll-padding-top: 20px }
+body { line-height: 1.5; min-height: 100vh }
+img { width: 100%; height: auto; display: block }
+input, button, textarea, select { font: inherit }
+@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
+@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
+
+/* Padding around content */
+@media (min-width: 1025px) { section { padding: 4% 14% } }
+@media (min-width: 768px) and (max-width: 1024px) { section { padding: 5% 12% } }
+@media (max-width: 767px) { section { padding: 32px 9% 32px 9% } }
+
+/* ==== Headings ==== */
+
+h1 {
+	font-family: sans-serif;
+	font-size: 64px;
+    text-align: center;
+    letter-spacing: -1px;
+    margin-bottom: 64px;
+}
+
+h3 {
+	font-family: sans-serif;
+	font-size: 28px;
+    margin-bottom: 2px;
+}
+
+/* Paragraphs of text */
+p {
+	font-family: sans-serif;
+    font-size: 20px;
+    color: #fffcfc;
+    line-height: 1.7
+}
+/* Div selector with properties and values */
+div {
+
+padding: 12px;
+margin-bottom: 40px;
+width: 25%;
+}
+.bono {
+    background-color: #28d6f5;
+}
+
+.edge {
+    background-color: #61cc37;
+}
+
+.adam {
+    background-color: #471e22;
+}
+
+.larry {
+    background-color: #592f69;
+}
+main > div{
+    width: 300px;
+}
+.bono h3,
+.bono p,
+.adam h3,
+.adam p { color: #fff }
+
+.edge h3,
+.edge p,
+.larry h3,
+.larry p { color: #000 }

@@ -1,0 +1,97 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+*, *::before, *::after { box-sizing: border-box }
+html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
+scroll-behavior: smooth; scroll-padding-top: 20px }
+body { line-height: 1.5; min-height: 100vh; font-family: 'Roboto', sans-serif; } /* Set custom font */
+@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
+@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
+img { width: 100%; height: auto; display: block }
+input, button, textarea, select { font: inherit }
+
+
+/* ============ CUSTOM PROPERTIES ============  */
+
+:root {
+    /* Alternatives to default sans-serif font */
+    --font-sans: 'Roboto', sans-serif;
+    --font-serif: 'Georgia', serif;
+    --font-monospace: 'Courier New', monospace;
+
+    /* Typography */
+    --fs-sm: 1rem;
+    --fs-base: 1.125rem;
+    --fs-md: 1.5rem;
+    --fs-lg: 2rem;
+    --fs-xl: 2.5rem;
+    --fs-xxl: 3rem;
+    
+    /* Color variables */
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --gray-100: #f7fafc;
+    --gray-800: #2d3748;
+}
+
+/* Global font */
+body { font-family: var(--font-sans); }
+
+/* Section Styles */
+section {
+    padding: 60px 10%;
+    background-color: #f4f6f8;
+}
+
+section h2 {
+    font-size: var(--fs-xl);
+    font-weight: 600;
+    color: var(--gray-800);
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: var(--fs-md);
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+section p {
+    font-size: var(--fs-base);
+    line-height: 1.8;
+    color: var(--gray-800);
+    margin-bottom: 1em;
+}
+
+/* Badge Styles */
+.badge {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: var(--fs-sm);
+    padding: 8px 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.badge span {
+    font-weight: bold;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 5%;
+    }
+    section h2 {
+        font-size: var(--fs-lg);
+    }
+    section p {
+        font-size: var(--fs-sm);
+    }
+}
+
+@media (min-width: 1025px) {
+    section {
+        padding: 60px 10%;
+    }
+}
